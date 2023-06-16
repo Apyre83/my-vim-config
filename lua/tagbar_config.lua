@@ -32,6 +32,9 @@ vim.g.airline_section_x = '%f'
 function _G.setSize()
 	local path = vim.fn.expand('%:p:h')
 	local stat = vim.loop.fs_stat(path)
+	if stat == nil then
+		return
+	end
 	local size = stat.size
 	vim.g.airline_section_c = 'PORN FOLDER: ' .. size .. 'KB'
 end
