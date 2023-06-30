@@ -31,5 +31,18 @@ vim.g.cpp_member_highlight = 1
 vim.g.cpp_simple_highlight = 1
 
 -- My c++ flags for compiling
-vim.g.syntastic_cpp_compiler = 'c++'
-vim.g.syntastic_cpp_compiler_options = ' -std=c++2a -Wall -Wextra -Werror'
+-- vim.g.syntastic_cpp_compiler = 'c++'
+-- vim.g.syntastic_cpp_compiler_options = ' -std=c++2a -Wall -Wextra -Werror'
+
+
+
+-- Since tpp is not supported by neovim, we need to set the filetype to cpp just to get the color right
+function _G.setFileTypeTpp()
+	if vim.bo.filetype == "tpp" then
+		vim.cmd('set syntax=cpp')
+	end
+end
+
+vim.api.nvim_create_autocmd(
+	'BufEnter',
+	{ pattern = '*', command = ':lua setFileTypeTpp()' })

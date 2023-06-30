@@ -26,4 +26,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+
+-- FOr Code
+-- Python flake8 norm
+
 vim.call('plug#end')
