@@ -27,6 +27,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 
+Plug 'junegunn/goyo.vim'
+
+
+
 -- FOr Code
 -- Python flake8 norm
 

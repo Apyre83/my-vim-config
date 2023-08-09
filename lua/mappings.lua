@@ -28,3 +28,6 @@ vim.keymap.set('n', '<F8>', ':AirlineToggle<CR>')
 
 -- Exit terminal mode
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
+
+
+vim.keymap.set('n', '<Tab>', ':Goyo<CR>')
