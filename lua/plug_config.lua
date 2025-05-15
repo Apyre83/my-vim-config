@@ -30,6 +30,10 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/goyo.vim'
 
 
+-- MarkDown
+Plug('iamcco/markdown-preview.nvim', { ['do'] = 'cd app && yarn install'})
+
+
 
 -- FOr Code
 -- Python flake8 norm
