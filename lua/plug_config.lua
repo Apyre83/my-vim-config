@@ -2,6 +2,11 @@ local	Plug = vim.fn['plug#']
 
 vim.call('plug#begin', '~/.config/nvim/plugged')
 
+
+
+-- Auto completion
+Plug 'ms-jpq/coq_nvim'
+
 -- Header for school
 Plug 'pandark/42header.vim'
 
