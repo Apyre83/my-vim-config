@@ -38,7 +38,7 @@ vim.g.cpp_simple_highlight = 1
 -- vim.g.syntastic_cpp_compiler_options = ' -std=c++2a -Wall -Wextra -Werror'
 
 
-vim.cmd('COQnow')
+vim.cmd('COQnow -s')
 
 
 -- Since tpp is not supported by neovim, we need to set the filetype to cpp just to get the color right
